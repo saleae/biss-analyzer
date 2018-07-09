@@ -25,3 +25,5 @@ if(MSVC)
 else()
     install(TARGETS biss_analyzer LIBRARY DESTINATION ".")
 endif()
+
+set_post_build_destination(biss_analyzer)
