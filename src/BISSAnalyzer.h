@@ -6,7 +6,7 @@
 #include "BISSSimulationDataGenerator.h"
 
 class BISSAnalyzerSettings;
-class ANALYZER_EXPORT BISSAnalyzer : public Analyzer2
+class BISSAnalyzer : public Analyzer2
 {
 public:
 	BISSAnalyzer();
