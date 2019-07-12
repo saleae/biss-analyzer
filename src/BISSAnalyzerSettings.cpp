@@ -12,21 +12,21 @@ BISSAnalyzerSettings::BISSAnalyzerSettings()
 
 //---------------------------------------------------------------------------------------------------------------------------------
 	mMaChannelInterface.reset( new AnalyzerSettingInterfaceChannel() );
-	mMaChannelInterface->SetTitleAndTooltip( "MA:", "MA" );
+	mMaChannelInterface->SetTitleAndTooltip( "MA", "" );
 	mMaChannelInterface->SetChannel( mMaChannel );
 //---------------------------------------------------------------------------------------------------------------------------------
 	mSloChannelInterface.reset( new AnalyzerSettingInterfaceChannel() );
-	mSloChannelInterface->SetTitleAndTooltip( "SLO:", "SLO" );
+	mSloChannelInterface->SetTitleAndTooltip( "SLO", "" );
 	mSloChannelInterface->SetChannel( mSloChannel );	
 //---------------------------------------------------------------------------------------------------------------------------------
 	mDatenartInterface.reset( new AnalyzerSettingInterfaceNumberList() );
-	mDatenartInterface->SetTitleAndTooltip("Type of data:", "Specify the type of data to be analyzed." );
+	mDatenartInterface->SetTitleAndTooltip("Data Type", "Specify the type of data to be analyzed" );
 	mDatenartInterface->AddNumber(0,"Register Data","");
 	mDatenartInterface->AddNumber(1,"Single Cycle Data","");
 	mDatenartInterface->SetNumber( mDatenart );
 //---------------------------------------------------------------------------------------------------------------------------------
 	mDataLengthInterface.reset( new AnalyzerSettingInterfaceInteger() );
-	mDataLengthInterface->SetTitleAndTooltip( "Serial data length (Bit):",  "Specify the serial data length in bit." );
+	mDataLengthInterface->SetTitleAndTooltip( "Serial data length (Bit)",  "Specify the serial data length in bit" );
 	mDataLengthInterface->SetMax( 64 );
 	mDataLengthInterface->SetMin( 9 );
 	mDataLengthInterface->SetInteger( mDataLength );
