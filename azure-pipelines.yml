@@ -83,8 +83,8 @@ jobs:
     - download: current
       artifact: AnalyzerLibWin
       patterns: |
-        '*.dll'
-        '*.pdb'
+        *.dll
+        *.pdb
     - download: current
       artifact: AnalyzerLibMac
     - script: |
